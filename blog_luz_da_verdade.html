@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport"/>
+  <title>Luz da Verdade - Blog de Teologia Cristã</title>
+  <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=OMSi1cbc70Dit08-u6uO7Fg88e4QXSmJbveiwpoErvG1nrgFv8NcqOKyV-5ZFiMeV0-4wioeet2yUowwT0E9Bhlel1IJOedI6t2td1MIo7TtUOM4jO8iE6BBGKRG_VH9AcA5rNRAQjkW6b4cKjcJTr6eBO0YqdL0uT7uFUM7L2ifd9uPG0nIVRfYgzJ6qL_o7UPM94OA5aznJPhgczqUq_r7NcvyXQuFUasJNUCEjbK8-UlYj2faiQOL0S6wLmKvVVV6goM6xrR78JEiTiquLc1UI0YaLbGGllGoh6G5CiixpKPAMXhaBMkQGWB4RZPqhwdpr9v2wGxqBHs9Y-b5QiUDO5OZlTsHndnrTAM8mds3Hs-2YJ2vN4bnd7HcXDga4V5mvERblEThV2BsKmKYrDEGJbBuKkYvPalKFhfWLm9QkI7ahn_uKoefdTHZbbWjwh6BSDeFepVe6wc8yt8DdX6rec9HzEc5miXnqdqirlspeqbjDzK5ATQidb44iGBFvpqsu73lglcH-JSZMobQ1ZmFUDpma8Ghyp8AErV9zPGVnKQV0Q4GmYnCuFj09DmbJQgKhHueF9Dsxukseq1nUC0Tr53ufISVH5Iuvrv13lnjUpf_NdSGdjizDMMY33o-ypaC5CMvqPfdzf07ydveT-9gSrsANEHjpFalc52c6mqXLdtTwAhdr8WVrtGVGbaWw86EcprU6Ie0tQrz3EqAUy2TCaBudDE4_wXcycoHVr63sM64OF4C8OO983nJcFjDTaDSFcNnwCkCF20_zzpPdJmmw47ZDhHONro9inOXth0sufw5T4nxiMFSUmpo_m0qIGKTpOMPBykGpdcw6JgL6UnREQLJ2j6zVFMwIjNOYLJtedOzxkHpCC3qJQWqAVVP_E2pSu4eA8A5lOyNVdLMvg" charset="UTF-8"></script><style>
+/* Variáveis CSS para temas */
+:root {
+    /* Tema Claro */
+    --primary-color: #1a3c6e; /* Azul escuro */
+    --secondary-color: #3366cc; /* Azul médio */
+    --accent-color: #d4af37; /* Dourado - mantido para contraste */
+    --wine-color: #8c1c2c; /* Vinho */
+    --wine-light: #a82a3a; /* Vinho mais claro */
+    --text-color: #333333;
+    --text-light: #666666;
+    --bg-color: #ffffff;
+    --bg-secondary: #f9f9f9;
+    --border-color: #e0e0e0;
+    --card-bg: #ffffff;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --header-bg: linear-gradient(135deg, #1a3c6e, #8c1c2c);
+    --footer-bg: #1a2a3a;
+    --footer-text: #f5f5f5;
+}
+
+/* Tema Escuro */
+.dark-mode {
+    --primary-color: #3366cc; /* Azul médio */
+    --secondary-color: #5588ee; /* Azul claro */
+    --accent-color: #ffd700; /* Dourado mais brilhante */
+    --wine-color: #a82a3a; /* Vinho mais claro */
+    --wine-light: #c13c4c; /* Vinho ainda mais claro */
+    --text-color: #f5f5f5;
+    --text-light: #cccccc;
+    --bg-color: #121212;
+    --bg-secondary: #1e1e1e;
+    --border-color: #333333;
+    --card-bg: #1e1e1e;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    --header-bg: linear-gradient(135deg, #1a3c6e, #a82a3a);
+    --footer-bg: #1a1a1a;
+    --footer-text: #f5f5f5;
+}
+
+/* Reset e Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: var(--wine-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Botão de alternar tema */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#theme-toggle-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#theme-toggle-btn:hover {
+    background-color: var(--wine-color);
+    transform: scale(1.1);
+}
+
+.light-mode #theme-toggle-btn .fa-sun {
+    display: none;
+}
+
+.light-mode #theme-toggle-btn .fa-moon {
+    display: block;
+}
+
+.dark-mode #theme-toggle-btn .fa-sun {
+    display: block;
+}
+
+.dark-mode #theme-toggle-btn .fa-moon {
+    display: none;
+}
+
+/* Cabeçalho */
+header {
+    background: var(--header-bg);
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background 0.3s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.2rem;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+nav .menu {
+    display: flex;
+    list-style: none;
+}
+
+nav .menu li {
+    margin-left: 1.5rem;
+}
+
+nav .menu a {
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+nav .menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+nav .menu a:hover::after,
+nav .menu a.active::after {
+    width: 100%;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Seção de Boas-vindas */
+.welcome-section {
+    background: linear-gradient(rgba(26, 60, 110, 0.8), rgba(140, 28, 44, 0.8)), url('https://via.placeholder.com/1920x1080?text=Luz+da+Verdade') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.welcome-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-content h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.featured-verse {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid var(--accent-color);
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 2rem auto;
+    max-width: 90%;
+}
+
+.featured-verse blockquote {
+    font-style: italic;
+}
+
+.featured-verse cite {
+    display: block;
+    margin-top: 1rem;
+    font-style: normal;
+    text-align: right;
+    color: var(--accent-color);
+}
+
+/* Conteúdo Principal */
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Seção de Posts */
+.posts-section {
+    padding: 1rem 0;
+}
+
+.posts-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.post {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.post-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.post:hover .post-image img {
+    transform: scale(1.05);
+}
+
+.post-content {
+    padding: 1.5rem;
+}
+
+.post-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.post-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.post-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.post-meta i {
+    margin-right: 0.3rem;
+}
+
+.post-excerpt p {
+    margin-bottom: 1.5rem;
+}
+
+.post-full-content {
+    margin-bottom: 1.5rem;
+}
+
+.post-full-content p {
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.read-more-btn {
+    background-color: var(--wine-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more-btn i {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: var(--wine-light);
+}
+
+.read-more-btn:hover i {
+    transform: translateX(3px);
+}
+
+/* Sidebar */
+.sidebar {
+    padding: 1rem 0;
+}
+
+.sidebar-widget {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--card-shadow);
+}
+
+.sidebar-widget h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Widget de Busca */
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px 0 0 4px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+.search-form input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.search-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0 1rem;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: var(--wine-color);
+}
+
+/* Widget de Versículo */
+.daily-verse {
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 1.2rem;
+}
+
+.daily-verse blockquote {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.daily-verse cite {
+    display: block;
+    text-align: right;
+    color: var(--wine-color);
+}
+
+#new-verse-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+#new-verse-btn i {
+    margin-right: 0.5rem;
+}
+
+#new-verse-btn:hover {
+    background-color: var(--wine-color);
+}
+
+/* Widget de Comentários */
+.comment {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comment:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.comment-author {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+.comment-content {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.comment-post {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* Widget de Categorias */
+.categories-list {
+    list-style: none;
+}
+
+.categories-list li {
+    margin-bottom: 0.8rem;
+}
+
+.categories-list a {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed var(--border-color);
+    transition: padding-left 0.3s ease;
+}
+
+.categories-list a:hover {
+    padding-left: 0.5rem;
+}
+
+.categories-list span {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-about p {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: var(--footer-text);
+    opacity: 0.8;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: var(--accent-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--footer-text);
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.post, .sidebar-widget {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 992px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+    }
+    
+    nav .menu {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 250px;
+        height: 100vh;
+        background-color: var(--primary-color);
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        z-index: 99;
+    }
+    
+    nav .menu.active {
+        right: 0;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    nav .menu li {
+        margin: 0 0 1rem;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        z-index: 100;
+    }
+    
+    .welcome-section {
+        padding: 3rem 0;
+    }
+    
+    .welcome-content h2 {
+        font-size: 2rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .post-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .featured-verse {
+        padding: 1rem;
+    }
+    
+    .theme-toggle {
+        top: 10px;
+        right: 10px;
+    }
+    
+    #theme-toggle-btn {
+        width: 35px;
+        height: 35px;
+    }
+}
+  </style>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+</head>
+
+<body class="light-mode">
+  <!-- Botão de alternar tema -->
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Luz da Verdade</h1>
+        <p>Iluminando caminhos através da Palavra</p>
+      </div>
+      <nav>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="menu">
+          <li><a href="#" class="active">Início</a></li>
+          <li><a href="#">Artigos</a></li>
+          <li><a href="#">Estudos Bíblicos</a></li>
+          <li><a href="#">Devocional</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção de Boas-vindas -->
+  <section class="welcome-section">
+    <div class="container">
+      <div class="welcome-content">
+        <h2>Bem-vindo ao Luz da Verdade</h2>
+        <p>Um espaço dedicado à reflexão teológica e ao crescimento espiritual através da Palavra de Deus.</p>
+        <div class="featured-verse">
+          <blockquote>
+            <p>"Porque a palavra de Deus é viva, e eficaz, e mais penetrante do que qualquer espada de dois gumes, e penetra até à divisão da alma, e do espírito, e das juntas e medulas, e é apta para discernir os pensamentos e intenções do coração."</p>
+            <cite>— Hebreus 4:12</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <div class="container main-content">
+      <!-- Seção de Posts -->
+      <section class="posts-section">
+        <h2>Artigos Recentes</h2>
+        
+        <!-- Post 1 -->
+        <article class="post">
+          <div class="post-image">
+            <img src="https://via.placeholder.com/800x400?text=A+Graça+de+Deus" alt="A Graça de Deus"/>
+          </div>
+          <div class="post-content">
+            <h3>A Graça de Deus na Vida do Cristão</h3>
+            <div class="post-meta">
+              <span><i class="far fa-calendar"></i> 20 de Maio, 2025</span>
+              <span><i class="far fa-user"></i> Pastor João Silva</span>
+            </div>
+            <div class="post-excerpt">
+              <p>A graça de Deus é um dos conceitos mais profundos e transformadores da teologia cristã. Ela representa o favor imerecido que Deus concede à humanidade, manifestando Seu amor incondicional...</p>
+            </div>
+            <div class="post-full-content hidden">
+              <p>A graça de Deus é um dos conceitos mais profundos e transformadores da teologia cristã. Ela representa o favor imerecido que Deus concede à humanidade, manifestando Seu amor incondicional mesmo quando não merecemos.</p>
+              <p>Na Epístola aos Efésios, o apóstolo Paulo escreve: "Porque pela graça sois salvos, por meio da fé; e isto não vem de vós, é dom de Deus" (Efésios 2:8). Esta passagem fundamental nos lembra que nossa salvação não é resultado de nossas obras ou méritos, mas um presente gratuito de Deus.</p>
+              <p>A graça divina opera em diferentes dimensões na vida do cristão:</p>
+              <p><strong>Graça Salvadora:</strong> É através dela que somos reconciliados com Deus, recebendo perdão pelos nossos pecados e vida eterna.</p>
+              <p><strong>Graça Sustentadora:</strong> Nos fortalece diariamente para enfrentar desafios e tentações, como Paulo testemunhou quando o Senhor lhe disse: "A minha graça te basta, porque o meu poder se aperfeiçoa na fraqueza" (2 Coríntios 12:9).</p>
+              <p><strong>Graça Transformadora:</strong> Nos molda progressivamente à imagem de Cristo, renovando nossa mente e coração.</p>
+              <p>Viver sob a graça não significa, contudo, liberdade para pecar. Pelo contrário, a verdadeira compreensão da graça nos motiva a viver em santidade, como expressão de gratidão pelo que recebemos gratuitamente.</p>
+              <p>Como cristãos, somos chamados não apenas a receber a graça, mas também a ser canais dela para outros, demonstrando misericórdia, perdão e amor ao próximo, refletindo assim o caráter do nosso Deus gracioso.</p>
+            </div>
+            <button class="read-more-btn">Leia mais <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </article>
+        
+        <!-- Post 2 -->
+        <article class="post">
+          <div class="post-image">
+            <img src="https://via.placeholder.com/800x400?text=Oração+na+Vida+Cristã" alt="Oração na Vida Cristã"/>
+          </div>
+          <div class="post-content">
+            <h3>O Poder da Oração na Vida Cristã</h3>
+            <div class="post-meta">
+              <span><i class="far fa-calendar"></i> 15 de Maio, 2025</span>
+              <span><i class="far fa-user"></i> Dra. Maria Oliveira</span>
+            </div>
+            <div class="post-excerpt">
+              <p>A oração é o canal de comunicação direta entre o crente e Deus. Através dela, expressamos adoração, gratidão, confissão, súplica e intercessão. Jesus nos ensinou não apenas a importância da oração...</p>
+            </div>
+            <div class="post-full-content hidden">
+              <p>A oração é o canal de comunicação direta entre o crente e Deus. Através dela, expressamos adoração, gratidão, confissão, súplica e intercessão. Jesus nos ensinou não apenas a importância da oração, mas também como orar.</p>
+              <p>No Evangelho de Mateus, encontramos o modelo de oração que Jesus ensinou aos seus discípulos, conhecido como "Pai Nosso" (Mateus 6:9-13). Esta oração abrange aspectos fundamentais do relacionamento com Deus: reconhecimento de Sua santidade, submissão à Sua vontade, dependência de Sua provisão, necessidade de perdão e proteção.</p>
+              <p>A Bíblia nos exorta a "orar sem cessar" (1 Tessalonicenses 5:17), indicando que a oração deve ser uma atitude constante de comunhão com Deus, não apenas um ritual ocasional. Quando oramos, reconhecemos nossa dependência de Deus e abrimos espaço para Sua atuação em nossas vidas.</p>
+              <p>Existem diferentes tipos de oração na prática cristã:</p>
+              <p><strong>Oração de Adoração:</strong> Reconhecemos a grandeza e majestade de Deus.</p>
+              <p><strong>Oração de Confissão:</strong> Reconhecemos nossos pecados e buscamos o perdão divino.</p>
+              <p><strong>Oração de Ação de Graças:</strong> Expressamos gratidão pelas bênçãos recebidas.</p>
+              <p><strong>Oração de Súplica:</strong> Apresentamos nossas necessidades a Deus.</p>
+              <p><strong>Oração de Intercessão:</strong> Oramos em favor de outras pessoas.</p>
+              <p>A oração não é apenas um monólogo, mas um diálogo. Envolve tanto falar quanto ouvir a Deus. Através da meditação na Palavra e do silêncio contemplativo, podemos discernir a voz de Deus e Sua direção para nossas vidas.</p>
+              <p>Embora Deus conheça nossas necessidades antes mesmo de pedirmos (Mateus 6:8), a oração nos transforma, alinhando nossa vontade à de Deus e fortalecendo nossa fé. Como escreveu C.S. Lewis: "A oração não muda a Deus, mas muda quem ora."</p>
+            </div>
+            <button class="read-more-btn">Leia mais <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </article>
+        
+        <!-- Post 3 -->
+        <article class="post">
+          <div class="post-image">
+            <img src="https://via.placeholder.com/800x400?text=Fruto+do+Espírito" alt="Fruto do Espírito"/>
+          </div>
+          <div class="post-content">
+            <h3>O Fruto do Espírito na Vida do Crente</h3>
+            <div class="post-meta">
+              <span><i class="far fa-calendar"></i> 10 de Maio, 2025</span>
+              <span><i class="far fa-user"></i> Prof. Carlos Mendes</span>
+            </div>
+            <div class="post-excerpt">
+              <p>Em Gálatas 5:22-23, o apóstolo Paulo enumera o fruto do Espírito: "amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão, domínio próprio". Estas qualidades...</p>
+            </div>
+            <div class="post-full-content hidden">
+              <p>Em Gálatas 5:22-23, o apóstolo Paulo enumera o fruto do Espírito: "amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão, domínio próprio". Estas qualidades representam o caráter de Cristo que deve ser manifestado na vida do crente através da obra do Espírito Santo.</p>
+              <p>É importante notar que Paulo fala de "fruto" (singular) e não "frutos" (plural), sugerindo que estas qualidades formam um conjunto integrado, não características isoladas. Quando o Espírito Santo habita em nós, todas estas virtudes se desenvolvem simultaneamente, embora em diferentes graus.</p>
+              <p>O desenvolvimento do fruto do Espírito é um processo gradual de santificação. Não ocorre instantaneamente após a conversão, mas requer cooperação com a obra do Espírito em nossas vidas. Como Jesus ensinou na parábola da videira (João 15), permanecemos nEle para que possamos dar fruto.</p>
+              <p>Examinemos brevemente cada aspecto deste fruto:</p>
+              <p><strong>Amor (Ágape):</strong> Não é um sentimento, mas uma decisão de buscar o bem do outro, mesmo à custa do próprio sacrifício. É o amor sacrificial demonstrado por Cristo na cruz.</p>
+              <p><strong>Alegria:</strong> Não depende de circunstâncias externas, mas da certeza da presença e propósito de Deus em nossa vida.</p>
+              <p><strong>Paz:</strong> Transcende o entendimento humano (Filipenses 4:7) e permanece mesmo em meio às tempestades da vida.</p>
+              <p><strong>Longanimidade:</strong> Paciência diante das provações e perseverança no caminho da fé.</p>
+              <p><strong>Benignidade:</strong> Gentileza e consideração no trato com os outros.</p>
+              <p><strong>Bondade:</strong> Disposição para fazer o bem e agir com integridade.</p>
+              <p><strong>Fidelidade:</strong> Lealdade a Deus e confiabilidade nos relacionamentos humanos.</p>
+              <p><strong>Mansidão:</strong> Força sob controle, humildade sem fraqueza.</p>
+              <p><strong>Domínio próprio:</strong> Autocontrole sobre impulsos, desejos e emoções.</p>
+              <p>O fruto do Espírito contrasta com as "obras da carne" mencionadas anteriormente na passagem (Gálatas 5:19-21). Enquanto as obras da carne destroem relacionamentos e comunidades, o fruto do Espírito os edifica e fortalece.</p>
+              <p>Como cristãos, somos chamados não a produzir este fruto por esforço próprio, mas a permitir que o Espírito Santo o desenvolva em nós à medida que nos rendemos à Sua obra transformadora.</p>
+            </div>
+            <button class="read-more-btn">Leia mais <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </article>
+      </section>
+      
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Campo de Busca -->
+        <div class="sidebar-widget search-widget">
+          <h3>Buscar</h3>
+          <form class="search-form">
+            <input type="text" placeholder="O que você procura?"/>
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        
+        <!-- Versículo do Dia -->
+        <div class="sidebar-widget verse-widget">
+          <h3>Versículo do Dia</h3>
+          <div class="daily-verse">
+            <blockquote>
+              <p id="daily-verse-text">"Confia no Senhor de todo o teu coração e não te estribes no teu próprio entendimento. Reconhece-o em todos os teus caminhos, e ele endireitará as tuas veredas."</p>
+              <cite id="daily-verse-reference">— Provérbios 3:5-6</cite>
+            </blockquote>
+            <button id="new-verse-btn"><i class="fas fa-sync-alt"></i> Novo versículo</button>
+          </div>
+        </div>
+        
+        <!-- Últimos Comentários -->
+        <div class="sidebar-widget comments-widget">
+          <h3>Últimos Comentários</h3>
+          <div class="recent-comments">
+            <div class="comment">
+              <div class="comment-author">Ana Souza</div>
+              <div class="comment-content">
+                <p>Excelente artigo sobre a graça! Me ajudou a compreender melhor este conceito tão fundamental.</p>
+              </div>
+              <div class="comment-post">Em: A Graça de Deus na Vida do Cristão</div>
+            </div>
+            <div class="comment">
+              <div class="comment-author">Pedro Almeida</div>
+              <div class="comment-content">
+                <p>Tenho praticado mais a oração contemplativa e realmente tem transformado minha vida espiritual.</p>
+              </div>
+              <div class="comment-post">Em: O Poder da Oração na Vida Cristã</div>
+            </div>
+            <div class="comment">
+              <div class="comment-author">Lúcia Ferreira</div>
+              <div class="comment-content">
+                <p>Gostaria de ver mais conteúdo sobre como desenvolver o domínio próprio no dia a dia.</p>
+              </div>
+              <div class="comment-post">Em: O Fruto do Espírito na Vida do Crente</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Categorias -->
+        <div class="sidebar-widget categories-widget">
+          <h3>Categorias</h3>
+          <ul class="categories-list">
+            <li><a href="#">Teologia Sistemática <span>(12)</span></a></li>
+            <li><a href="#">Estudos Bíblicos <span>(8)</span></a></li>
+            <li><a href="#">Vida Cristã <span>(15)</span></a></li>
+            <li><a href="#">Apologética <span>(6)</span></a></li>
+            <li><a href="#">História da Igreja <span>(4)</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>Sobre o Luz da Verdade</h3>
+          <p>Um blog dedicado ao estudo e reflexão da teologia cristã, buscando iluminar caminhos através da Palavra de Deus.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Artigos</a></li>
+            <li><a href="#">Estudos Bíblicos</a></li>
+            <li><a href="#">Devocional</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Redes Sociais</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Luz da Verdade. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Esperar que o DOM seja completamente carregado
+    document.addEventListener('DOMContentLoaded', function() {
+        // Alternância de tema (claro/escuro)
+        const themeToggleBtn = document.getElementById('theme-toggle-btn');
+        const body = document.body;
+        
+        // Verificar se há preferência de tema salva
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+        }
+        
+        // Função para alternar entre temas
+        themeToggleBtn.addEventListener('click', function() {
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+        
+        // Menu Mobile
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const menu = document.querySelector('.menu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            // Alternar ícone do menu
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Fechar menu ao clicar fora
+        document.addEventListener('click', function(event) {
+            if (!menu.contains(event.target) && !mobileMenuBtn.contains(event.target) && menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Funcionalidade "Leia mais" para expandir posts
+        const readMoreBtns = document.querySelectorAll('.read-more-btn');
+        
+        readMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const postContent = this.parentElement;
+                const excerpt = postContent.querySelector('.post-excerpt');
+                const fullContent = postContent.querySelector('.post-full-content');
+                
+                if (fullContent.classList.contains('hidden')) {
+                    // Expandir conteúdo
+                    excerpt.style.display = 'none';
+                    fullContent.classList.remove('hidden');
+                    this.innerHTML = 'Mostrar menos <i class="fas fa-arrow-up"></i>';
+                } else {
+                    // Recolher conteúdo
+                    excerpt.style.display = 'block';
+                    fullContent.classList.add('hidden');
+                    this.innerHTML = 'Leia mais <i class="fas fa-arrow-right"></i>';
+                }
+            });
+        });
+        
+        // Animações ao rolar a página
+        const animateOnScroll = function() {
+            const elements = document.querySelectorAll('.post, .sidebar-widget');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 50) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Inicializar elementos como invisíveis
+        const elementsToAnimate = document.querySelectorAll('.post, .sidebar-widget');
+        elementsToAnimate.forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        });
+        
+        // Executar animação no carregamento e ao rolar
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+        
+        // Versículo do dia - Array de versículos
+        const verses = [
+            {
+                text: "Confia no Senhor de todo o teu coração e não te estribes no teu próprio entendimento. Reconhece-o em todos os teus caminhos, e ele endireitará as tuas veredas.",
+                reference: "Provérbios 3:5-6"
+            },
+            {
+                text: "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.",
+                reference: "João 3:16"
+            },
+            {
+                text: "Não to mandei eu? Sê forte e corajoso; não temas, nem te espantes, porque o Senhor, teu Deus, é contigo por onde quer que andares.",
+                reference: "Josué 1:9"
+            },
+            {
+                text: "O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes. Leva-me para junto das águas de descanso.",
+                reference: "Salmos 23:1-2"
+            },
+            {
+                text: "Eu sou a videira, vós, os ramos. Quem permanece em mim, e eu, nele, esse dá muito fruto; porque sem mim nada podeis fazer.",
+                reference: "João 15:5"
+            },
+            {
+                text: "Não andeis ansiosos de coisa alguma; em tudo, porém, sejam conhecidas, diante de Deus, as vossas petições, pela oração e pela súplica, com ações de graças.",
+                reference: "Filipenses 4:6"
+            },
+            {
+                text: "Porque eu bem sei os planos que estou projetando para vós, diz o Senhor; planos de paz e não de mal, para vos dar um futuro e uma esperança.",
+                reference: "Jeremias 29:11"
+            }
+        ];
+        
+        // Função para exibir um versículo aleatório
+        const newVerseBtn = document.getElementById('new-verse-btn');
+        const dailyVerseText = document.getElementById('daily-verse-text');
+        const dailyVerseReference = document.getElementById('daily-verse-reference');
+        
+        function displayRandomVerse() {
+            const randomIndex = Math.floor(Math.random() * verses.length);
+            const verse = verses[randomIndex];
+            
+            // Animação de fade
+            dailyVerseText.style.opacity = 0;
+            dailyVerseReference.style.opacity = 0;
+            
+            setTimeout(() => {
+                dailyVerseText.textContent = `"${verse.text}"`;
+                dailyVerseReference.textContent = `— ${verse.reference}`;
+                
+                dailyVerseText.style.opacity = 1;
+                dailyVerseReference.style.opacity = 1;
+            }, 300);
+        }
+        
+        // Estilizar a transição dos versículos
+        dailyVerseText.style.transition = 'opacity 0.3s ease';
+        dailyVerseReference.style.transition = 'opacity 0.3s ease';
+        
+        // Evento de clique para novo versículo
+        newVerseBtn.addEventListener('click', displayRandomVerse);
+        
+        // Funcionalidade de busca (simulada)
+        const searchForm = document.querySelector('.search-form');
+        
+        searchForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const searchInput = this.querySelector('input');
+            const searchTerm = searchInput.value.trim();
+            
+            if (searchTerm !== '') {
+                alert(`Busca por: "${searchTerm}"\n\nEsta é uma funcionalidade simulada para demonstração.`);
+                searchInput.value = '';
+            }
+        });
+        
+        // Efeito de hover nos links do menu
+        const menuLinks = document.querySelectorAll('.menu a');
+        
+        menuLinks.forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // Inicializar a página com um versículo aleatório
+        displayRandomVerse();
+    });
+  </script>
+</body>
+</html>
